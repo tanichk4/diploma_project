@@ -9,7 +9,7 @@ body{
 }
 
 .container{
-    max-width: 1440px;
+    max-width: 1140px;
     margin: 0 auto;
 }
 
@@ -98,9 +98,20 @@ body{
     border-radius: 50%; */
 }
 
+.intro{
+    background-color: #F4F5F7;
+}
+
 .intro-1, .intro-2{
-    margin-left: 130px;
     max-width: 555px;
+}
+
+.intro-1{
+    margin: 77px 29px 76px 130px;
+}
+
+.intro-2{
+    margin: 77px 131px 76px 29px;
 }
 
 .intro-1 h3, .intro-2 h3{
