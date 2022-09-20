@@ -660,7 +660,7 @@ margin: 34px 0 111px;
     margin-bottom: 30px;
 }
 
-.preview_text p{
+.preview_text .p{
     font-size: 24px;
     line-height: 34px;
     color: #2B292D;
@@ -742,6 +742,42 @@ margin: 34px 0 111px;
 
     }
 
+    .flex-1090{ 
+        display: flex;
+        justify-content: center;
+        flex-direction: column;
+        text-align: center;
+    }
+
+    .preview_caption {
+        max-width: 462px;
+        margin: 0 auto;
+    }
+
+    .preview_text .p {
+        font-size: 20px;
+        max-width: 392px;
+        margin: 12px auto 50px;        
+
+    }
+
+    .preview-text_small{
+        font-size: 18px;
+        line-height: 26px;
+        max-width: 459px;
+        margin: 0 auto;     
+        text-align: left;
+        margin-bottom: 21px;
+    }
+    
+    .preview-img{
+        margin: 49px 0 67px;
+    }
+
+    .preview-br{
+        width: 457px;
+       height: 3px;
+    }
     .header_nav{
         display: none;
     }
@@ -753,9 +789,7 @@ margin: 34px 0 111px;
         flex-direction: column-reverse;
     }
 
-    .inbox{
-        padding: 56px 0 69px;
-    }
+    
 
     .info{
         text-align: center;
