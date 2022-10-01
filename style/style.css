@@ -899,6 +899,21 @@ li{
 
 @media screen and (max-width: 1090px){
 
+    .communicate_info-flex{
+        flex-direction: column;
+        align-items: center;
+        text-align: center;
+    }
+
+    .communicate-flex{
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .communicate-img{
+        margin-bottom: 38px;
+    }
+
     .checkbox, .check-wrapper{
         display: block;
     }
@@ -1053,6 +1068,15 @@ li{
         flex-direction: column-reverse;
     }
 
+    .info_button{
+        max-width: 160px;
+        margin: 0 auto 37px;
+    }
+
+    .info_pretitle-blue{    
+        text-align: center;
+    }
+
     .info{
         text-align: center;
     }
@@ -1061,6 +1085,7 @@ li{
         margin: 0 auto 14px;
         font-size: 48px;
         line-height: 52px;
+        text-align: center;
     }
 
     .info_text{
@@ -1068,6 +1093,7 @@ li{
         font-size: 20px;
         line-height: 26px;
         margin: 0 auto 41px;
+        text-align: center;
     }
 
     .main_container{
@@ -1141,6 +1167,8 @@ li{
 
     .footer_p-align{
         align-items: center;
+        margin: 0 auto 38px;
+        max-width: 300px;
     }
 
     .footer_p-align div:not(:last-child){
@@ -1151,6 +1179,57 @@ li{
         display: flex;
         justify-content: space-between;
     }
+
+    .foundation_footer-padding {
+        padding: 43px 0 0
+    }
+
+    .footer_p-align p{
+        font-size: 20px;
+        line-height: 30px;
+        color: rgba(43, 41, 45, 0.6);  
+    }
+
+    .footer_p1 h6{
+        margin-bottom: 32px;
+        font-size: 28px;
+    }
+
+    .foundation_break{
+        display: none;
+    }
+
+    .footer_p-text{
+        display: none;
+    }
+
+    .flex_logo{
+        flex-direction: column;
+        text-align: center;
+    }
+
+    .footer-flex img, .logo-margin{
+        margin: 0 0 32px;
+        line-height: 25px;
+    }
+
+    .logo_title, .footer_logo_text{
+        font-size: 24px;
+    }
+
+    .foundation_footer-tpl-1090{
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;
+        margin-bottom: 15px;
+    }
+
+    .foundation_footer-contacts{
+        max-width: 300px;
+        margin: 0 auto;
+        flex-direction: column;
+    }
+
 }
 
 @media screen and (max-width: 800px){
@@ -1292,6 +1371,9 @@ li{
 }
 
 @media screen and (max-width: 550px){
+    .eye{
+        display: none;
+    }
     .container{
         max-width: 430px;
     }
