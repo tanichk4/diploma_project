@@ -1,0 +1,27 @@
+
+.bx-pager-item{
+    width: 10px;
+    height: 10px;
+    background-color: grey;
+    border-radius: 100%;
+}
+
+.bx-pager-item:hover{
+    background-color: rgba(49, 66, 197, 1);
+    transition: 500ms;
+}
+
+.bx-pager-link{
+    opacity: 0;
+}
+
+.bx-pager{
+    margin: 38px 0 67px;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+}
+
+.bx-controls{
+
+}
