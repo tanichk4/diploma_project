@@ -1702,9 +1702,6 @@ li{
         margin: 57px 0 112px;
     }
 
-    .communicate-text .button{
-
-    }
 
     .grid{
         grid-template-columns: 1fr;
@@ -1719,9 +1716,5 @@ li{
     .grid_item:nth-child(3){
         grid-column: 1/2;
         grid-row: 4/6;
-    }
-
-    .grid_item:nth-child(4){
-
     }
 }
