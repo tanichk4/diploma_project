@@ -148,8 +148,9 @@ body{
 }
 
 .button:hover{
+    transform: scale(1.1);
     cursor: pointer;
-    transition: 500ms;
+    transition: 700ms;
     background: #FFFFFF;
     color: #3040C4;
 }
@@ -1000,7 +1001,7 @@ li{
     }
 
     .check{
-        transition: 300ms;
+        transition: 700ms;
     }
 
     .checkbox{
@@ -1020,42 +1021,51 @@ li{
     }
 
     .checkbox:checked ~ .check-wrapper > .check:first-of-type{
-        transform: rotate(45deg) translate(13px, 8px);
-        transform-origin: bottom left;
+        transform: rotate(45deg) translate(-50%, -50%);
+        top: 21px;
+        left: 8px;
+        position: absolute;
+    }
+
+
+    .checkbox:checked ~ .check-wrapper > .check:last-of-type{
+        transform: rotate(-45deg) translate(-50%, -50%);
+        top: 0;
+        right: 0;
+        position: absolute;
     }
 
     .checkbox:checked ~ .check-wrapper > .check:nth-of-type(2){
         opacity: 0;
     }
 
-    .checkbox:checked ~ .check-wrapper > .check:last-of-type{
-        transform: rotate(-45deg) translate(2px, 3px);
-        transform-origin: bottom right;
-    }
-
     .checkbox:checked ~ .menu-all{
         display: block;
-        position: fixed;
+        position: absolute;
         background-color: white;
-        top: 0;
-        left: 0;
-        bottom: 0;
-        right: 0;
+        margin-top: 10px;
+        top: -70%;
+        right: -60%;
         text-align: center;
-        padding-top: 40px;
+        padding: 30px;
         z-index: 3;
+        border-radius: 5px;
 
         display: flex;
         flex-direction: column;
         justify-content: center;
+        transition: 300ms;
     }
 
     .menu-all a{
-        font-weight: bold;
-        font-size: 80px;
+        font-size: 40px;
         line-height: 78px;  
-    letter-spacing: -0.5px;
-    text-align: center;
+        letter-spacing: -0.5px;
+        text-align: center;
+    }
+
+    .menu-all a:hover{
+        font-weight: bold;  
     }
 
     .menu-all ul{
@@ -1064,8 +1074,8 @@ li{
 
     .menu-all .button{
         width: 350px;
-        height: 140px;
-        font-size: 48px;
+        height: 100px;
+        font-size: 30px;
         font-weight: bold;
     }
 
@@ -1363,16 +1373,8 @@ li{
         padding: 0 0 50px;
     }
 
-    .checkbox, .check-wrapper{
-        display: block;
-    }
-
     .menu-all{
         display: none;
-    }
-
-    .check{
-        transition: 300ms;
     }
 
     .checkbox{
@@ -1383,43 +1385,14 @@ li{
         opacity: 0;
     }
 
-
-    .checkbox:checked ~ .check-wrapper > .check:first-of-type{
-        transform: rotate(45deg) translate(13px, 8px);
-        transform-origin: bottom left;
-    }
-
-    .checkbox:checked ~ .check-wrapper > .check:nth-of-type(2){
-        opacity: 0;
-    }
-
-    .checkbox:checked ~ .check-wrapper > .check:last-of-type{
-        transform: rotate(-45deg) translate(2px, 3px);
-        transform-origin: bottom right;
-    }
-
     li{
         margin-right: 0;
         margin-bottom: 20px;
     }
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
+    .eye{
+        display: none;
+    }
 
     .container{
         max-width: 500px;
@@ -1443,9 +1416,7 @@ li{
 }
 
 @media screen and (max-width: 550px){
-    .eye{
-        display: none;
-    }
+
     .container{
         max-width: 430px;
     }

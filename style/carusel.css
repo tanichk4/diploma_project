@@ -24,6 +24,10 @@
     margin: 40px auto 0;
 }
 
-.bx-controls{
+.bx-wrapper{
+    box-shadow: none;
+}
 
+.bx-wrapper .bx-pager{
+    position: relative;
 }
