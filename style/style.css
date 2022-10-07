@@ -168,6 +168,8 @@ body{
 }
 
 .button-white:hover{
+    transform: scale(1.1);
+    transition: 700ms;
     background: radial-gradient(circle, rgba(0,19,196,1) 0%, rgba(0,115,251,1) 100%); 
     color: #F4F5F7;
 }
@@ -332,11 +334,6 @@ margin: 34px 0 111px;
     transition: 500ms;
 }
 
-.grid3 p:hover{
-    color: white;
-    transition: 500ms;
-}
-
 .grid3 div:not(:last-child){
     margin-right: 30px;
 }
@@ -376,6 +373,14 @@ margin: 34px 0 111px;
     font-weight: bold;
     font-size: 22px;
     line-height: 20px;
+}
+
+.about-location{
+    position: absolute;
+    font-size: 18px;
+    line-height: 24px;
+    left: 60.4%;
+    right: 8.67%;
 }
 
 .grid{
@@ -716,9 +721,14 @@ margin: 34px 0 111px;
     margin-right: 20px;
 }
 
+.foundation_footer-tpl p{
+    cursor: pointer;
+}
+
 .foundation_footer-logos{
     display: flex;
     flex-direction: row; 
+    cursor: pointer;
 }
 
 .foundation_footer-logosget-apple:not(:last-child){
@@ -932,7 +942,38 @@ li{
     color:  rgba(43, 41, 45, 0.6);
 }
 
+#up{
+    display: none;
+    position: fixed;
+    width: 50px;
+    height: 50px;
+    bottom: 50px;
+    right: 50px;
+    font-size: 22px;
+    font-weight: bold; 
+    color: white;
+    background-color:rgba(241, 89, 43, 0.4);  
+    backdrop-filter: blur(5px);
+    border-radius: 50%;
+    text-align: center; 
+    /* display: flex; 
+     justify-content: center;
+    align-items: center; */   
+    cursor: pointer;
+}
 
+#up span{
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%) rotate(-90deg);
+    display: inline-block;
+}
+
+#up:hover{
+    transform: scale(1.1);
+    transition: 700ms;
+}
 
 @media screen and (max-width: 1200px){
     .container{
@@ -1154,6 +1195,10 @@ li{
         margin: 49px 0 67px;
     }
 
+    .preview-img img{max-width: 100%;
+    margin: 0 auto;
+    }
+
     .preview-br{
         width: 457px;
        height: 3px;
@@ -1224,6 +1269,16 @@ li{
         grid-template-rows: repeat(2, 300px);
         justify-content: center;
     }
+/* 
+   .engage_img-1:hover p{
+        color: #fff;
+
+    } */
+
+    .grid3:hover  p{
+        color: white;        
+        transition: 500ms;
+    }  
 
     .engage_img-1{
         background-color: #004449;

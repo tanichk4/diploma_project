@@ -36,7 +36,7 @@
                 </div>
                 <div class="menu-all flex">
                     <ul class="flex flex_menu header_ul">
-                        <li><a class="header_link header_link1" href="#">Home</a></li>
+                        <li><a class="header_link header_link1" id="about-link" href="#">Home</a></li>
                         <li><a class="header_link header_link2" href="#">Stories</a></li>
                     </ul>
                     <button id="open-modal" class="button">
@@ -239,10 +239,22 @@
                 </button>
             </div>
             <div class="grid3">
-                <div class="engage_img-1"><img class="engage_img" src="./png/engage/item 1.svg" alt="Developers"><a href="#"><p>Developers</p></a></div>
-                <div class="engage_img-2"><img class="engage_img" src="./png/engage/item 2.svg" alt="Entertainment"><a href="#"><p>Entertainment</p></a></div>
-                <div class="engage_img-3"><img class="engage_img" src="./png/engage/item 3.svg" alt="Athletes"><a href="#"><p>Athletes</p></a></div>
-                <div class="engage_img-4"><img class="engage_img" src="./png/engage/item 4.svg" alt="Creators"><a href="#"><p>Creators</p></a></div>
+                <div class="engage_img-1">
+                    <img class="engage_img" src="./png/engage/item 1.svg" alt="Developers">
+                    <a href="#"><p >Developers</p></a>
+                </div>
+                <div class="engage_img-2">
+                    <img class="engage_img" src="./png/engage/item 2.svg" alt="Entertainment">
+                    <a href="#"><p>Entertainment</p></a>
+                </div>
+                <div class="engage_img-3">
+                    <img class="engage_img" src="./png/engage/item 3.svg" alt="Athletes">
+                    <a href="#"><p>Athletes</p></a>
+                </div>
+                <div class="engage_img-4">
+                    <img class="engage_img" src="./png/engage/item 4.svg" alt="Creators">
+                    <a href="#"><p>Creators</p></a>
+                </div>
             </div>
         </div>
     </section>
@@ -342,7 +354,7 @@
      <img src="./png/trust/ouch.png" alt="green balloon" style="max-width: 100%;">
     </div> 
     </section> 
-        <div class="hiring">
+        <div class="hiring" id="about">
             <div class="hiring_texts">
                 <h4 class="hiring_title">We're hiring</h4>
                 <p class="hiring_text">We’re a team of lifelong learners. We’re equal parts left and right brained.</p>
@@ -354,6 +366,7 @@
                 <div class="about-items">
                     <div class="flex">
                         <p class="about-pretitle">Front-End Developer</p>
+                        <p class="about-location">Los Angeles / Remote</p>
                         <p class="about-icon">></p>
                     </div>
                     <p class="about-text">
@@ -363,6 +376,7 @@
                 <div class="about-items">
                     <div class="flex">
                         <p class="about-pretitle">Community Manager</p>
+                        <p class="about-location">New York / Full-Time</p>
                         <p class="about-icon">></p>
                     </div>
                     <p class="about-text">
@@ -372,6 +386,7 @@
                 <div class="about-items">
                     <div class="flex">
                         <p class="about-pretitle">UX/UI Designer</p>
+                        <p class="about-location">New York / Full-Time</p>
                         <p class="about-icon">></p>
                     </div>
                     <p class="about-text">
@@ -493,10 +508,14 @@
             </p>
         </div>
     </div>
+    <div id="up">
+        <span>></span>
+    </div>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.0/jquery.min.js" integrity="sha512-894YE6QWD5I59HgZOGReFYm4dnWc1Qt5NtvYSaNcOP+u1T9qYdvdihz0PPSiiqn/+/3e7Jo4EaG7TubfWGUrMQ==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/bxslider/4.2.15/jquery.bxslider.min.js"></script>
     <script src="./script/slider.js"></script>
     <script src="./script/script.js"></script>
     <script src="./script/modal.js"></script>
+    <script src="./script/upButton.js"></script>
 </body>
 </html>
