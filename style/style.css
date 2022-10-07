@@ -793,7 +793,7 @@ align-items: center;
 }
 
 .preview-flex_small-js{
-    display: none;
+
     border-bottom: 1px solid blue; 
 }
 
@@ -858,11 +858,15 @@ align-items: center;
     padding-left: 10px;
 }
 
-.preview-br{
+.preview-h3_small-change{
+    color: #3142C6;
+}
+
+/* .preview-br{
     height: 3px; background-color: #3142C6;
     margin-bottom: 17px;
     display: none;
-}
+} */
 
 .preview-text_small{
     font-size: 18px;
