@@ -768,6 +768,7 @@ align-items: center;
 
 .footer_p1 p:not(:last-child){
     margin-bottom: 15px;
+    margin-right: 15px;
 }
 
 .footer_p1 h6{
@@ -789,9 +790,17 @@ align-items: center;
     display: flex;
     align-items: center;
     padding: 10px 0;
-
+    /* border-bottom: 1px solid grey; */
 }
 
+.preview-items{
+    padding: 1px;
+    border-bottom: 1px solid grey;
+}
+
+.toggle-hr-prev{
+    border-bottom: 3px solid blue;
+}
 
 .preview-compass{
     margin-bottom: 8px;
@@ -883,12 +892,6 @@ align-items: center;
     display: none;
 
 }
-
-
-
-
-
-
 
 li{
     display: inline-block;
@@ -1185,7 +1188,6 @@ li{
         text-align: center;
     }
 
-
     .preview_caption {
         max-width: 462px;
         margin: 0 auto;
@@ -1298,13 +1300,9 @@ li{
 
     }   */
 
-    .engage_img-1:hover > a{
+    .engage_img:hover > a{
         color: white;        
         transition: 500ms;
-    }
-
-    .engage_img-1{
-        background-color: #004449;
     }
 
     .grid{
@@ -1350,7 +1348,6 @@ li{
     }
 
     .footer_p-align{
-        align-items: center;
         margin: 0 auto 38px;
         max-width: 300px;
     }
