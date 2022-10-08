@@ -779,6 +779,10 @@ align-items: center;
     margin-bottom: 16px;
 }
 
+.engage_img:hover > a{
+    color: white
+}
+
 .preview_pretitle{
     font-size: 22px;
     line-height: 34px;
@@ -1290,6 +1294,8 @@ li{
         grid-template-rows: repeat(2, 300px);
         justify-content: center;
     }
+
+
 /* 
    .engage_img-1:hover p{
         color: #fff;
@@ -1299,11 +1305,6 @@ li{
     /* .grid3:hover  p{
 
     }   */
-
-    .engage_img:hover > a{
-        color: white;        
-        transition: 500ms;
-    }
 
     .grid{
         gap: 29px 45px;
