@@ -84,6 +84,10 @@ body{
     padding: 30px 0;
 }
 
+.logo_grid-item img{
+    max-width: 100%;
+}
+
 .button-flex{
     display: flex;
     justify-content: center;
@@ -369,6 +373,10 @@ margin: 34px 0 111px;
     transition: 1s;
 }
 
+.change-text{
+    display: none;
+}
+
 .about-pretitle{
     font-weight: bold;
     font-size: 22px;
@@ -626,6 +634,7 @@ margin: 34px 0 111px;
     font-weight: bold;
     margin-bottom: 20px;
     max-width: 555px;
+    text-align: center;
 }
 
 .hiring_text{
@@ -861,10 +870,11 @@ align-items: center;
 
 .preview-h3_small{
     font-weight: bold;
-    font-size: 22px;
+    font-size: 20px;
     line-height: 26px;
     color: #2B292D;
     padding-left: 10px;
+    text-align: left;
 }
 
 .preview-h3_small-change{
@@ -1182,7 +1192,6 @@ li{
     .logo_grid-item{
         align-self: center;
         justify-self: center;
-
     }
 
     .flex-1090{ 
@@ -1307,7 +1316,7 @@ li{
     }   */
 
     .grid{
-        gap: 29px 45px;
+        gap: 15px;
         grid-template-columns: repeat(2, 1fr);
         grid-template-rows: repeat(4, 1fr);
     }
@@ -1337,10 +1346,6 @@ li{
 
     .trial_tou {
         font-size: 12px
-    }
-
-    .label-flex{
-        margin: 10px;
     }
 
     .foundation_footer-tpl {
@@ -1534,6 +1539,19 @@ li{
     }
 }
 
+@media screen and (max-width: 430px){
+    .about-items{
+        position: relative;
+    }
+
+    .about-location{
+        position: absolute;
+        top: 5px;
+        left: 25px;
+        font-size: 16px;
+    }
+}
+
 @media screen and (max-width: 360px){
     .container{
         max-width: 300px;
@@ -1541,12 +1559,6 @@ li{
 
     .trial_texts {
         max-width: 310px;
-    }
-
-    .grid3 {
-        gap: 15px;
-        grid-template-columns: repeat(1, 262px);
-        grid-template-rows: repeat(1, 300px);
     }
 
     .hiring{
@@ -1559,12 +1571,6 @@ li{
    .container{
     max-width: 290px;
    }   
-
-   .grid3 {
-    gap: 15px;
-    grid-template-columns: repeat(1, 262px);
-    grid-template-rows: repeat(1, 300px);
-    }
 
     .hiring{
         max-width: 270px;
@@ -1677,7 +1683,7 @@ li{
         grid-template-columns: repeat(1, 290px);
         grid-template-rows: repeat(1, 300px);
         justify-content: center;
-    }
+    } 
 
     .grid3 div{
         max-width: 290px;
@@ -1724,8 +1730,16 @@ li{
         line-height: 34px;
     }
 
-    .engage1 {
+    .engage1{
         padding: 50px 0 50px;
+    }
+
+    .about-items{
+        position: relative;
+    } 
+
+    .about-pretitle{
+        line-height: 28px;
     }
 
     .communicate_info-flex {
