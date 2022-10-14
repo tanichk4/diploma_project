@@ -2,7 +2,7 @@
 $name = $_POST['name'];
 $email = $_POST['email'];
 $token = "5235062069:AAHABFDm58Cp267Kf8Ev0HNzV6N1cqxRRy8";
-$chat_id = "";
+$chat_id = "-833442726";
 $arr = array(
   'Имя пользователя: ' => $name,
   'User email: ' => $email
